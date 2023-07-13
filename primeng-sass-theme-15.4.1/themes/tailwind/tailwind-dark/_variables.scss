@@ -1,6 +1,7 @@
 $hover-color: #0C1F29 !default;
 $focus-color: #123041 !default;
 $background-color: #040607 !default;
+$overlay-color: #080F13 !default;
 
 $primaryColor: #02A6F9 !default;
 $secondaryColor: #eff5f8 !default;
@@ -29,8 +30,8 @@ $colors: (
 );
 
 //reused color variables
-$shade000:$background-color;    //surface
-$shade100:$background-color;    //header background      //updated: gray-50
+$shade000:$overlay-color;    //surface
+$shade100:$overlay-color;    //header background      //updated: gray-50
 $shade200:$hover-color;    //hover background       //updated: gray-100
 $shade300:$hover-color;    //border, divider        //updated  coolgray-200
 $shade400:$hover-color;    //input border           //updated: gray-300
@@ -879,7 +880,7 @@ $imagePreviewActionIconBorderRadius:50% !default;
     --surface-ground:#{$background-color};
     --surface-section:#{$background-color};
     --surface-card:#{$background-color};
-    --surface-overlay:#{$background-color};
+    --surface-overlay:#{$overlay-color};
     --surface-border:#{$hover-color};
     --surface-hover: #{$hover-color};
     --highlight-bg: #{$highlightBg};
