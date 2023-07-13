@@ -1,10 +1,17 @@
-$primaryColor: #4F46E5 !default;
-$primaryDarkColor: #4338CA !default;
-$primaryDarkerColor: #3730A3 !default;
-$primaryTextColor: #ffffff !default;
+$hover-color: #0C1F29 !default;
+$focus-color: #123041 !default;
+$background-color: #040607 !default;
 
-$highlightBg: #EEF2FF !default;
-$highlightTextColor: #312E81 !default;
+$primaryColor: #02A6F9 !default;
+$secondaryColor: #eff5f8 !default;
+$primaryDarkColor: #0092db !default;
+$primaryDarkerColor: #005c8a !default;
+$primaryTextColor: $secondaryColor;
+
+
+
+$highlightBg: #070D10 !default;
+$highlightTextColor: $secondaryColor !default;
 
 $colors: (
     "blue": #3B82F6,
@@ -17,21 +24,21 @@ $colors: (
     "orange": #F97316,
     "bluegray": #64748B,
     "purple": #A855F7,
-    "red": #EF4444,
+    "red": #af1d1d,
     "primary": $primaryColor
 );
 
 //reused color variables
-$shade000:#ffffff !default;    //surface
-$shade100:#fafafa !default;    //header background      //updated: gray-50
-$shade200:#f4f4f5 !default;    //hover background       //updated: gray-100
-$shade300:#e5e7eb !default;    //border, divider        //updated  coolgray-200
-$shade400:#d4d4d8 !default;    //input border           //updated: gray-300
-$shade500:#6b7280 !default;    //input icon             //updated: coolgray500
-$shade600:#71717A !default;    //text secondary color   //updated: gray-500
-$shade700:#3f3f46 !default;    //text color             //updated: gray-700
-$shade800:#27272A !default;    //unused                 gray-800
-$shade900:#18181B !default;    //unused                 gray-900
+$shade000:$background-color;    //surface
+$shade100:$background-color;    //header background      //updated: gray-50
+$shade200:$hover-color;    //hover background       //updated: gray-100
+$shade300:$hover-color;    //border, divider        //updated  coolgray-200
+$shade400:$hover-color;    //input border           //updated: gray-300
+$shade500:$primaryColor;    //input icon             //updated: coolgray500
+$shade600:$secondaryColor;    //text secondary color   //updated: gray-500
+$shade700:$primaryColor;    //text color             //updated: gray-700
+$shade800:$primaryColor;            
+$shade900:$primaryColor; 
 
 //global
 $fontFamily:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" !default;
@@ -57,7 +64,7 @@ $scaleSM:0.875 !default;
 $scaleLG:1.25 !default;
 
 //focus
-$focusOutlineColor:#6366F1 !default;
+$focusOutlineColor:$focus-color;
 $focusOutline:0 none !default;
 $focusOutlineOffset:0 !default;
 $focusShadow:0 0 0 1px $focusOutlineColor !default;
@@ -203,7 +210,7 @@ $helpButtonTextActiveColor:$helpButtonTextColor !default;
 $helpButtonActiveBorderColor:#9333EA !default;
 $helpButtonFocusShadow:0 0 0 0.2rem scale-color($helpButtonBg, $lightness: 60%) !default;
 
-$dangerButtonBg:#EF4444 !default;
+$dangerButtonBg:#be0b0b !default;
 $dangerButtonTextColor:#ffffff !default;
 $dangerButtonBorder:1px solid $dangerButtonBg !default;
 $dangerButtonHoverBg:#DC2626 !default;
@@ -845,36 +852,36 @@ $imagePreviewActionIconBorderRadius:50% !default;
     --primary-color:#{$primaryColor};
     --primary-color-text:#{$primaryTextColor};
     --font-family:#{$fontFamily};
-    --surface-0: #ffffff;
-    --surface-50: #FAFAFA;
-    --surface-100: #F4F4F5;
-    --surface-200: #E4E4E7;
-    --surface-300: #D4D4D8;
-    --surface-400: #A1A1AA;
-    --surface-500: #71717A;
-    --surface-600: #52525B;
-    --surface-700: #3F3F46;
-    --surface-800: #27272A;
-    --surface-900: #18181B;
-    --gray-50: #FAFAFA;
-    --gray-100: #F4F4F5;
-    --gray-200: #E4E4E7;
-    --gray-300: #D4D4D8;
-    --gray-400: #A1A1AA;
-    --gray-500: #71717A;
-    --gray-600: #52525B;
-    --gray-700: #3F3F46;
-    --gray-800: #27272A;
-    --gray-900: #18181B;
+    --surface-800: #ffffff;
+    --surface-700: #FAFAFA;
+    --surface-600: #F4F4F5;
+    --surface-500: #E4E4E7;
+    --surface-400: #D4D4D8;
+    --surface-300: #A1A1AA;
+    --surface-200: #71717A;
+    --surface-100: #52525B;
+    --surface-50: #3F3F46;
+    --surface-0: #27272A;
+    --surface-900: #{$secondaryColor};
+    --gray-900: #FAFAFA;
+    --gray-800: #F4F4F5;
+    --gray-700: #E4E4E7;
+    --gray-600: #D4D4D8;
+    --gray-500: #A1A1AA;
+    --gray-400: #71717A;
+    --gray-300: #52525B;
+    --gray-200: #3F3F46;
+    --gray-100: #27272A;
+    --gray-50: #18181B;
     --content-padding:#{$panelContentPadding};
     --inline-spacing:#{$inlineSpacing};
     --border-radius:#{$borderRadius};
-    --surface-ground:#FAFAFA;
-    --surface-section:#ffffff;
-    --surface-card:#ffffff;
-    --surface-overlay:#ffffff;
-    --surface-border:#e5e7eb;
-    --surface-hover: #f4f4f5;
+    --surface-ground:#{$background-color};
+    --surface-section:#{$background-color};
+    --surface-card:#{$background-color};
+    --surface-overlay:#{$background-color};
+    --surface-border:#{$hover-color};
+    --surface-hover: #{$hover-color};
     --highlight-bg: #{$highlightBg};
     --highlight-text-color: #{$highlightTextColor};
     --focus-ring: #{$focusShadow};

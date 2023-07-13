@@ -8,7 +8,8 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "lint": "ng lint",
-    "sass:tailwind-dark": "sass --no-source-map ./primeng-sass-theme-15.4.1/themes/tailwind/tailwind-dark/theme.scss:src/assets/layout/styles/theme/tailwind-dark/theme.css"
+    "sass:tailwind-dark": "sass --no-source-map ./primeng-sass-theme-15.4.1/themes/tailwind/tailwind-dark/theme.scss:src/assets/layout/styles/theme/tailwind-dark/theme.css",
+    "sass-watch:tailwind-dark": "sass --watch --no-source-map ./primeng-sass-theme-15.4.1/themes/tailwind/tailwind-dark/theme.scss:src/assets/layout/styles/theme/tailwind-dark/theme.css"
   },
   "private": true,
   "dependencies": {
