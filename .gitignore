@@ -42,3 +42,7 @@ Thumbs.db
 layout.css
 src/assets/demo/styles/badges.css
 src/assets/layout/styles/theme/designer
+
+#prime-sass
+primeng-sass-theme-15.4.1/theme.css
+primeng-sass-theme-15.4.1/.DS_STORE
