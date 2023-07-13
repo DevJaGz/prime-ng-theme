@@ -5,7 +5,7 @@
     "homepage": "https://primeng.org/",
     "repository": {
       "type": "git",
-      "url": "git+https://github.com/primefaces/primeng-sass-theme.git"
+      "url": "git@github.com:DevJaGz/prime-ng-theme.git"
     },
     "keywords": [
       "primeng",
